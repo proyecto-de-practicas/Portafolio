@@ -9,6 +9,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Arima:wght@100;200;300&family=Roboto:wght@100;300;500&family=Splash&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/normalize.css">
 <link rel="stylesheet" href="css/font-awesome.min.css">
+<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 <link rel="stylesheet" href="css/estiloPortafolio.css">
  <title>PORTAFOLIO-JDRF</title>
 </head>
@@ -21,9 +22,12 @@
     <header>
         <div class="contenedor">
             <nav class="menu">
-                <a href="#">Acerca de</a>
-                <a href="#">Trabajos</a>
+                <a href="#acerca-de">Acerca de</a>
+                <a href="#trabajos">Proyectos</a>
+                <a href="https://drive.google.com/file/d/1xC2MLu_bhy0-DO5tPiKlgTWrp_A9QPi8/view?usp=sharing"> <i class="fa fa-download" aria-hidden="true">  Hoja de vida</i></a>
+               <!--
                 <a href="#">Contactos</a>
+               --> 
             </nav>
             <div class="contenedor-texto">
                 <div class="texto">
@@ -34,7 +38,7 @@
         </div>
     </header>
     <section class="main">
-        <section class="acerca-de">
+        <section class="acerca-de" id="acerca-de">
             <div class="contenedor">
                 <div class="foto">
                     <img src="img/foto1.jpeg" alt="foto del autor (JERARDO ROMERO)" width="150" height="150">
@@ -45,14 +49,14 @@
                     </h3>
                     <p>
                         Ingeniero de sistema de la <span class="color-text">Universidad de la Guajira.</span> 
-                        Poseo habilidades y conocimientos en innovación y gestor de nuevas empresas, 
+                        Poseo habilidades y conocimientos en innovación, gestor de nuevas empresas, Desarrollo web Front-end. 
                         capaz de <span class="color-text">administrar recursos</span> y <span class="color-text">ejecutar proyectos dentro del contexto de globalización</span>,
                         sistematización y teorías administrativas que identifican el mundo en el siglo XXI.
                     </p>
                 </div>
             </div>
         </section>
-        <section class="trabajos">
+        <section class="trabajos" id="trabajos">
             <h3 class="titulo">Trabajos</h3>
             <div class="contenedor">
               
@@ -110,26 +114,38 @@
                         </div>
                     </div>
                   
-                   
+                    <div class="trabajo" style="opacity: 0.3 ;">
+                        <div class="thumb">
+                            <img src="img/9.jpg" alt="lorem">
+                        </div>
+                        <div class="descripcion">
+                            <p class="nombre">Cooperativa de trasporte</p>
+                            <p class="categoria">HTML - CSS - SASS - JAVASCRIPT - BOOTSTRAP</p>
+                            <p class="categoria"> Proceso: ... </p>
+                        </div>
+
+                    </div>
                 </div>
             </div>
         </section>
 
     </section>
     <footer>
-        <section class="contacto">   
-            <div class="contenedor">
-                <h3 class="titulo">
-                    Contacto
-                 </h3>
-                <form class="formulario" action="">
-                    <input type="text" placeholder="nombre" name="nombre" required>
-                    <input type="email" placeholder="correo" name="correo" required>
-                    <textarea name="mensaje" placeholder="mensaje" ></textarea>
-                    <input class="boton" type="submit" value="Enviar">
-                </form>
-            </div>
-        </section>
+        <!--
+     <section class="contacto">   
+          <div class="contenedor">
+              <h3 class="titulo">
+                  Contacto
+               </h3>
+              <form class="formulario" action="">
+                  <input type="text" placeholder="nombre" name="nombre" required>
+                  <input type="email" placeholder="correo" name="correo" required>
+                  <textarea name="mensaje" placeholder="mensaje" ></textarea>
+                  <input class="boton" type="submit" value="Enviar">
+              </form>
+          </div>
+      </section>
+        --> 
         <section class="rede-sociales">
             <div class="contenedor">
                 <a href="#" class="facebook"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
